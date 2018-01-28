@@ -1,22 +1,48 @@
-body {
-  margin: 0;
+body, html {
+    margin: 0;
+    height: 100%;
 }
 
-.parallax {
-  background-color: white;
-  background-image: url("bg.jpg");
-  height: 100%; 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /*following just for demo purposes to add height and top padding*/
-  height:300vh;
-  padding-top:100vh;
-}
-.parallax-curtain{
-  height:50vh;
-  background:rgba(255,255,255,0.5);
+.parallax { 
+    /* The image used */
+    background-image: url("bg.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+.logo {
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+}
+
+.border {
+    display:inline-block;
+    line-height:0px;
+    
+    border-radius:50%;
+
+    background-color: rgba(0,0,0,0.7);
+}
+
+.border span {
+    display:inline-block;
+    
+    padding-top:50%;
+    padding-bottom:50%;
+    
+    margin-left:30px;
+    margin-right:50px;
+
+    font-family: 'Grand Hotel', cursive;
+    font-size: 140px;
+    color: #ffffff;
+}
