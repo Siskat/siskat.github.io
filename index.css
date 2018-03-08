@@ -65,8 +65,10 @@ ul {
     display: none;
 }
 .sidebar {
+    font-family: 'Roboto', sans-serif;
     position: absolute;
     color: #ffffff;
     top: 4%;
     left: 3%;
+    cursor: pointer;
 }
