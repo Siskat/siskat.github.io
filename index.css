@@ -62,7 +62,7 @@ display: none;
 ul {
     list-style-type: none;
     padding: 0%;
-    
+    display: none;
 }
 .sidebar {
     position: absolute;
