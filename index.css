@@ -71,4 +71,14 @@ ul {
     top: 4%;
     left: 3%;
     cursor: pointer;
+    z-index: 9999;
+}
+
+.padding {
+    padding: 20px 0px;
+}
+
+a {
+    text-decoration: none;
+    color:inherit;
 }
