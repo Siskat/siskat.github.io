@@ -18,29 +18,71 @@ body, html {
 }
 
 .logo {
-  position: absolute;
-  top: 32%;
-  width: 100%;
-  text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -150px;
 }
 
 .border {
     display:inline-block;
-    line-height:0px;
+    width: 300px;
+    height: 300px;
     
     border-radius:50%;
 
     background-color: rgba(0,0,0,0.7);
+    animation: square-to-circle 2s 1s infinite;  
 }
 
-.border span {
-    display:inline-block;
-    
-    padding-top:50%;
-    padding-bottom:50%;
-    
-    margin-left:30px;
-    margin-right:50px;
+@keyframes square-to-circle {
+  0%  {
+    border-radius:0 0 0 0;
+    transform:rotate(0deg);
+  }
+  25%  {
+    border-radius:50% 50% 0 0;
+    transform:rotate(90deg);
+  }
+  50%  {
+    border-radius:50%;
+    transform:rotate(180deg);
+  }
+  75%  { 
+    border-radius:50% 50% 0 0;
+    transform:rotate(270deg);
+  }
+  100% {  
+    border-radius:0 0 0 0;
+    transform:rotate(360deg);
+  }
+}
+
+@-webkit-keyframes square-to-circle {
+  0%  {
+    border-radius:0 0 0 0;
+  }
+  25%  {
+    border-radius:50% 50% 0 0;
+  }
+  50%  {
+    border-radius:50%;
+  }
+  75%  {
+    border-radius:50% 50% 0 0;
+  }
+  100% {
+    border-radius:0 0 0 0;
+  }
+}
+
+.siskat {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -135px;
 
     font-family: 'Grand Hotel', cursive;
     font-size: 140px;
