@@ -172,3 +172,10 @@ b {
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.down {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  margin-left: -25px;
+}
